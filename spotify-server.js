@@ -270,6 +270,10 @@ app.get('/play', async (req, res) => {
     res.json(resultat)
 })
 
+app.get('/test', function(req, res) {
+    res.render("<h1>bravo</h1>");
+});
+
 http.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
